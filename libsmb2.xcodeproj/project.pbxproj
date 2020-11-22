@@ -1,0 +1,1255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47A0D79625688B800052975B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73A25688B800052975B /* config.h */; };
+		47A0D79725688B800052975B /* portable-endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73B25688B800052975B /* portable-endian.h */; };
+		47A0D79825688B800052975B /* socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73E25688B800052975B /* socket.h */; };
+		47A0D79A25688B800052975B /* libsmb2-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74025688B800052975B /* libsmb2-private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		47A0D79B25688B800052975B /* asprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74125688B800052975B /* asprintf.h */; };
+		47A0D79D25688B800052975B /* slist.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74325688B800052975B /* slist.h */; };
+		47A0D79E25688B800052975B /* libsmb2-dcerpc-lsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74525688B800052975B /* libsmb2-dcerpc-lsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D79F25688B800052975B /* libsmb2.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74625688B800052975B /* libsmb2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D7A025688B800052975B /* smb2-errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74725688B800052975B /* smb2-errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D7A125688B800052975B /* smb2.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74825688B800052975B /* smb2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D7A225688B800052975B /* libsmb2-dcerpc-srvsvc.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74925688B800052975B /* libsmb2-dcerpc-srvsvc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D7A325688B800052975B /* libsmb2-dcerpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74A25688B800052975B /* libsmb2-dcerpc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D7A425688B800052975B /* libsmb2-raw.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74B25688B800052975B /* libsmb2-raw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D7A525688B800052975B /* smb2-signing.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74D25688B800052975B /* smb2-signing.h */; };
+		47A0D7A625688B800052975B /* timestamps.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D74E25688B800052975B /* timestamps.c */; };
+		47A0D7A725688B800052975B /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D74F25688B800052975B /* aes.c */; };
+		47A0D7A825688B800052975B /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75025688B800052975B /* hmac.c */; };
+		47A0D7A925688B800052975B /* smb2-cmd-query-directory.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75125688B800052975B /* smb2-cmd-query-directory.c */; };
+		47A0D7AA25688B800052975B /* unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75225688B800052975B /* unicode.c */; };
+		47A0D7AB25688B800052975B /* dcerpc-lsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75325688B800052975B /* dcerpc-lsa.c */; };
+		47A0D7AC25688B800052975B /* smb2-data-reparse-point.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75425688B800052975B /* smb2-data-reparse-point.c */; };
+		47A0D7AE25688B800052975B /* hmac-md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75625688B800052975B /* hmac-md5.h */; };
+		47A0D7AF25688B800052975B /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75725688B800052975B /* compat.c */; };
+		47A0D7B025688B800052975B /* smb2-cmd-query-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75825688B800052975B /* smb2-cmd-query-info.c */; };
+		47A0D7B125688B800052975B /* aes128ccm.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75925688B800052975B /* aes128ccm.c */; };
+		47A0D7B225688B800052975B /* smb2-cmd-flush.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75A25688B800052975B /* smb2-cmd-flush.c */; };
+		47A0D7B325688B800052975B /* smb3-seal.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75B25688B800052975B /* smb3-seal.h */; };
+		47A0D7B425688B800052975B /* krb5-wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75C25688B800052975B /* krb5-wrapper.c */; };
+		47A0D7B525688B800052975B /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75D25688B800052975B /* sha.h */; };
+		47A0D7B625688B800052975B /* sha224-256.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75E25688B800052975B /* sha224-256.c */; };
+		47A0D7B725688B800052975B /* smb2-cmd-echo.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75F25688B800052975B /* smb2-cmd-echo.c */; };
+		47A0D7B825688B800052975B /* smb2-cmd-set-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76025688B800052975B /* smb2-cmd-set-info.c */; };
+		47A0D7B925688B800052975B /* ntlmssp.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76125688B800052975B /* ntlmssp.h */; };
+		47A0D7BA25688B800052975B /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76225688B800052975B /* init.c */; };
+		47A0D7BC25688B800052975B /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76425688B800052975B /* md5.h */; };
+		47A0D7BD25688B800052975B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76525688B800052975B /* sha1.c */; };
+		47A0D7BE25688B800052975B /* usha.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76625688B800052975B /* usha.c */; };
+		47A0D7BF25688B800052975B /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76725688B800052975B /* socket.c */; };
+		47A0D7C025688B800052975B /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76825688B800052975B /* alloc.c */; };
+		47A0D7C125688B800052975B /* sha-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76925688B800052975B /* sha-private.h */; };
+		47A0D7C225688B800052975B /* smb2-cmd-logoff.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76A25688B800052975B /* smb2-cmd-logoff.c */; };
+		47A0D7C325688B800052975B /* sha384-512.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76B25688B800052975B /* sha384-512.c */; };
+		47A0D7C525688B800052975B /* dcerpc-srvsvc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76D25688B800052975B /* dcerpc-srvsvc.c */; };
+		47A0D7C625688B800052975B /* pdu.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76E25688B800052975B /* pdu.c */; };
+		47A0D7C725688B800052975B /* smb2-cmd-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76F25688B800052975B /* smb2-cmd-error.c */; };
+		47A0D7C825688B800052975B /* smb2-cmd-session-setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77025688B800052975B /* smb2-cmd-session-setup.c */; };
+		47A0D7C925688B800052975B /* smb2-cmd-ioctl.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77125688B800052975B /* smb2-cmd-ioctl.c */; };
+		47A0D7CA25688B800052975B /* smb2-cmd-negotiate.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77225688B800052975B /* smb2-cmd-negotiate.c */; };
+		47A0D7CC25688B800052975B /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77425688B800052975B /* md4.h */; };
+		47A0D7CD25688B800052975B /* smb2-signing.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77525688B800052975B /* smb2-signing.c */; };
+		47A0D7CE25688B800052975B /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77625688B800052975B /* aes.h */; };
+		47A0D7CF25688B800052975B /* libsmb2.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77725688B800052975B /* libsmb2.c */; };
+		47A0D7D025688B800052975B /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77825688B800052975B /* sync.c */; };
+		47A0D7D125688B800052975B /* smb2-share-enum.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77925688B800052975B /* smb2-share-enum.c */; };
+		47A0D7D225688B800052975B /* krb5-wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77A25688B800052975B /* krb5-wrapper.h */; };
+		47A0D7D325688B800052975B /* smb2-cmd-tree-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77B25688B800052975B /* smb2-cmd-tree-connect.c */; };
+		47A0D7D425688B800052975B /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77C25688B800052975B /* compat.h */; };
+		47A0D7D525688B800052975B /* smb3-seal.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77D25688B800052975B /* smb3-seal.c */; };
+		47A0D7D625688B800052975B /* md4c.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77E25688B800052975B /* md4c.c */; };
+		47A0D7D725688B800052975B /* smb2-data-filesystem-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77F25688B800052975B /* smb2-data-filesystem-info.c */; };
+		47A0D7D825688B800052975B /* aes128ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D78025688B800052975B /* aes128ccm.h */; };
+		47A0D7DA25688B800052975B /* hmac-md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78225688B800052975B /* hmac-md5.c */; };
+		47A0D7DB25688B800052975B /* smb2-cmd-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78325688B800052975B /* smb2-cmd-read.c */; };
+		47A0D7DC25688B800052975B /* smb2-data-file-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78425688B800052975B /* smb2-data-file-info.c */; };
+		47A0D7DD25688B800052975B /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78525688B800052975B /* md5.c */; };
+		47A0D7DE25688B800052975B /* smb2-cmd-create.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78625688B800052975B /* smb2-cmd-create.c */; };
+		47A0D7DF25688B800052975B /* aes128ccm-test.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78725688B800052975B /* aes128ccm-test.c */; };
+		47A0D7E025688B800052975B /* smb2-cmd-tree-disconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78825688B800052975B /* smb2-cmd-tree-disconnect.c */; };
+		47A0D7E725688B800052975B /* ntlmssp.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79025688B800052975B /* ntlmssp.c */; };
+		47A0D7E825688B800052975B /* dcerpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79125688B800052975B /* dcerpc.c */; };
+		47A0D7E925688B800052975B /* smb2-data-security-descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79225688B800052975B /* smb2-data-security-descriptor.c */; };
+		47A0D7EA25688B800052975B /* smb2-cmd-close.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79325688B800052975B /* smb2-cmd-close.c */; };
+		47A0D7EB25688B800052975B /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79425688B800052975B /* errors.c */; };
+		47A0D7EC25688B800052975B /* smb2-cmd-write.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79525688B800052975B /* smb2-cmd-write.c */; };
+		47A0D820256895D20052975B /* slist.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74325688B800052975B /* slist.h */; };
+		47A0D821256895D20052975B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73A25688B800052975B /* config.h */; };
+		47A0D822256895D20052975B /* socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73E25688B800052975B /* socket.h */; };
+		47A0D823256895D20052975B /* portable-endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73B25688B800052975B /* portable-endian.h */; };
+		47A0D824256895D20052975B /* asprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74125688B800052975B /* asprintf.h */; };
+		47A0D828256895D30052975B /* slist.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74325688B800052975B /* slist.h */; };
+		47A0D829256895D30052975B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73A25688B800052975B /* config.h */; };
+		47A0D82A256895D30052975B /* socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73E25688B800052975B /* socket.h */; };
+		47A0D82B256895D30052975B /* portable-endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D73B25688B800052975B /* portable-endian.h */; };
+		47A0D82C256895D30052975B /* asprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74125688B800052975B /* asprintf.h */; };
+		47A0D830256895DE0052975B /* smb2-errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74725688B800052975B /* smb2-errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D831256895DE0052975B /* libsmb2-dcerpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74A25688B800052975B /* libsmb2-dcerpc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D832256895DE0052975B /* libsmb2.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74625688B800052975B /* libsmb2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D833256895DE0052975B /* smb2.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74825688B800052975B /* smb2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D834256895DE0052975B /* libsmb2-dcerpc-srvsvc.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74925688B800052975B /* libsmb2-dcerpc-srvsvc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D835256895DE0052975B /* libsmb2-raw.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74B25688B800052975B /* libsmb2-raw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D836256895DE0052975B /* libsmb2-dcerpc-lsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74525688B800052975B /* libsmb2-dcerpc-lsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D83A256895DE0052975B /* smb2-errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74725688B800052975B /* smb2-errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D83B256895DE0052975B /* libsmb2-dcerpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74A25688B800052975B /* libsmb2-dcerpc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D83C256895DE0052975B /* libsmb2.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74625688B800052975B /* libsmb2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D83D256895DE0052975B /* smb2.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74825688B800052975B /* smb2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D83E256895DE0052975B /* libsmb2-dcerpc-srvsvc.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74925688B800052975B /* libsmb2-dcerpc-srvsvc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D83F256895DE0052975B /* libsmb2-raw.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74B25688B800052975B /* libsmb2-raw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D840256895DE0052975B /* libsmb2-dcerpc-lsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74525688B800052975B /* libsmb2-dcerpc-lsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A0D844256895E30052975B /* libsmb2-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74025688B800052975B /* libsmb2-private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		47A0D848256895E30052975B /* libsmb2-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74025688B800052975B /* libsmb2-private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		47A0D852256895F40052975B /* smb2-signing.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74D25688B800052975B /* smb2-signing.h */; };
+		47A0D856256895F50052975B /* smb2-signing.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D74D25688B800052975B /* smb2-signing.h */; };
+		47A0D85A256896120052975B /* smb3-seal.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75B25688B800052975B /* smb3-seal.h */; };
+		47A0D85B256896120052975B /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75D25688B800052975B /* sha.h */; };
+		47A0D85C256896120052975B /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77625688B800052975B /* aes.h */; };
+		47A0D85D256896120052975B /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77C25688B800052975B /* compat.h */; };
+		47A0D85E256896120052975B /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76425688B800052975B /* md5.h */; };
+		47A0D85F256896130052975B /* sha-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76925688B800052975B /* sha-private.h */; };
+		47A0D860256896130052975B /* krb5-wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77A25688B800052975B /* krb5-wrapper.h */; };
+		47A0D861256896130052975B /* aes128ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D78025688B800052975B /* aes128ccm.h */; };
+		47A0D862256896130052975B /* ntlmssp.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76125688B800052975B /* ntlmssp.h */; };
+		47A0D863256896130052975B /* hmac-md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75625688B800052975B /* hmac-md5.h */; };
+		47A0D864256896130052975B /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77425688B800052975B /* md4.h */; };
+		47A0D868256896130052975B /* smb3-seal.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75B25688B800052975B /* smb3-seal.h */; };
+		47A0D869256896130052975B /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75D25688B800052975B /* sha.h */; };
+		47A0D86A256896130052975B /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77625688B800052975B /* aes.h */; };
+		47A0D86B256896130052975B /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77C25688B800052975B /* compat.h */; };
+		47A0D86C256896130052975B /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76425688B800052975B /* md5.h */; };
+		47A0D86D256896130052975B /* sha-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76925688B800052975B /* sha-private.h */; };
+		47A0D86E256896130052975B /* krb5-wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77A25688B800052975B /* krb5-wrapper.h */; };
+		47A0D86F256896130052975B /* aes128ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D78025688B800052975B /* aes128ccm.h */; };
+		47A0D870256896130052975B /* ntlmssp.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D76125688B800052975B /* ntlmssp.h */; };
+		47A0D871256896130052975B /* hmac-md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D75625688B800052975B /* hmac-md5.h */; };
+		47A0D872256896130052975B /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A0D77425688B800052975B /* md4.h */; };
+		47A0D876256896360052975B /* smb2-cmd-ioctl.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77125688B800052975B /* smb2-cmd-ioctl.c */; };
+		47A0D877256896360052975B /* smb2-cmd-create.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78625688B800052975B /* smb2-cmd-create.c */; };
+		47A0D878256896360052975B /* smb2-cmd-write.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79525688B800052975B /* smb2-cmd-write.c */; };
+		47A0D879256896360052975B /* pdu.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76E25688B800052975B /* pdu.c */; };
+		47A0D87A256896360052975B /* aes128ccm.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75925688B800052975B /* aes128ccm.c */; };
+		47A0D87B256896360052975B /* smb2-signing.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77525688B800052975B /* smb2-signing.c */; };
+		47A0D87C256896360052975B /* smb2-cmd-set-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76025688B800052975B /* smb2-cmd-set-info.c */; };
+		47A0D87D256896360052975B /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75725688B800052975B /* compat.c */; };
+		47A0D87E256896360052975B /* dcerpc-srvsvc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76D25688B800052975B /* dcerpc-srvsvc.c */; };
+		47A0D87F256896360052975B /* smb3-seal.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77D25688B800052975B /* smb3-seal.c */; };
+		47A0D880256896360052975B /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78525688B800052975B /* md5.c */; };
+		47A0D881256896360052975B /* unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75225688B800052975B /* unicode.c */; };
+		47A0D882256896360052975B /* smb2-cmd-tree-disconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78825688B800052975B /* smb2-cmd-tree-disconnect.c */; };
+		47A0D883256896360052975B /* smb2-data-file-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78425688B800052975B /* smb2-data-file-info.c */; };
+		47A0D884256896370052975B /* smb2-cmd-session-setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77025688B800052975B /* smb2-cmd-session-setup.c */; };
+		47A0D885256896370052975B /* sha384-512.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76B25688B800052975B /* sha384-512.c */; };
+		47A0D886256896370052975B /* smb2-cmd-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78325688B800052975B /* smb2-cmd-read.c */; };
+		47A0D887256896370052975B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76525688B800052975B /* sha1.c */; };
+		47A0D888256896370052975B /* aes128ccm-test.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78725688B800052975B /* aes128ccm-test.c */; };
+		47A0D889256896370052975B /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D74F25688B800052975B /* aes.c */; };
+		47A0D88A256896370052975B /* smb2-cmd-tree-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77B25688B800052975B /* smb2-cmd-tree-connect.c */; };
+		47A0D88B256896370052975B /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79425688B800052975B /* errors.c */; };
+		47A0D88C256896370052975B /* md4c.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77E25688B800052975B /* md4c.c */; };
+		47A0D88D256896370052975B /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76225688B800052975B /* init.c */; };
+		47A0D88E256896370052975B /* smb2-cmd-echo.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75F25688B800052975B /* smb2-cmd-echo.c */; };
+		47A0D88F256896370052975B /* smb2-cmd-flush.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75A25688B800052975B /* smb2-cmd-flush.c */; };
+		47A0D890256896370052975B /* timestamps.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D74E25688B800052975B /* timestamps.c */; };
+		47A0D891256896370052975B /* libsmb2.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77725688B800052975B /* libsmb2.c */; };
+		47A0D892256896370052975B /* smb2-data-reparse-point.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75425688B800052975B /* smb2-data-reparse-point.c */; };
+		47A0D893256896370052975B /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76825688B800052975B /* alloc.c */; };
+		47A0D894256896370052975B /* hmac-md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78225688B800052975B /* hmac-md5.c */; };
+		47A0D895256896370052975B /* dcerpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79125688B800052975B /* dcerpc.c */; };
+		47A0D896256896370052975B /* smb2-data-security-descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79225688B800052975B /* smb2-data-security-descriptor.c */; };
+		47A0D897256896370052975B /* usha.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76625688B800052975B /* usha.c */; };
+		47A0D898256896370052975B /* smb2-cmd-query-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75825688B800052975B /* smb2-cmd-query-info.c */; };
+		47A0D899256896370052975B /* smb2-cmd-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76F25688B800052975B /* smb2-cmd-error.c */; };
+		47A0D89A256896370052975B /* ntlmssp.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79025688B800052975B /* ntlmssp.c */; };
+		47A0D89B256896370052975B /* smb2-cmd-query-directory.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75125688B800052975B /* smb2-cmd-query-directory.c */; };
+		47A0D89C256896370052975B /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76725688B800052975B /* socket.c */; };
+		47A0D89D256896370052975B /* krb5-wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75C25688B800052975B /* krb5-wrapper.c */; };
+		47A0D89E256896370052975B /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77825688B800052975B /* sync.c */; };
+		47A0D89F256896370052975B /* sha224-256.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75E25688B800052975B /* sha224-256.c */; };
+		47A0D8A0256896370052975B /* smb2-share-enum.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77925688B800052975B /* smb2-share-enum.c */; };
+		47A0D8A1256896370052975B /* dcerpc-lsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75325688B800052975B /* dcerpc-lsa.c */; };
+		47A0D8A2256896370052975B /* smb2-cmd-negotiate.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77225688B800052975B /* smb2-cmd-negotiate.c */; };
+		47A0D8A3256896370052975B /* smb2-cmd-close.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79325688B800052975B /* smb2-cmd-close.c */; };
+		47A0D8A4256896370052975B /* smb2-data-filesystem-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77F25688B800052975B /* smb2-data-filesystem-info.c */; };
+		47A0D8A5256896370052975B /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75025688B800052975B /* hmac.c */; };
+		47A0D8A6256896370052975B /* smb2-cmd-logoff.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76A25688B800052975B /* smb2-cmd-logoff.c */; };
+		47A0D8AA256896370052975B /* smb2-cmd-ioctl.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77125688B800052975B /* smb2-cmd-ioctl.c */; };
+		47A0D8AB256896370052975B /* smb2-cmd-create.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78625688B800052975B /* smb2-cmd-create.c */; };
+		47A0D8AC256896370052975B /* smb2-cmd-write.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79525688B800052975B /* smb2-cmd-write.c */; };
+		47A0D8AD256896370052975B /* pdu.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76E25688B800052975B /* pdu.c */; };
+		47A0D8AE256896370052975B /* aes128ccm.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75925688B800052975B /* aes128ccm.c */; };
+		47A0D8AF256896370052975B /* smb2-signing.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77525688B800052975B /* smb2-signing.c */; };
+		47A0D8B0256896370052975B /* smb2-cmd-set-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76025688B800052975B /* smb2-cmd-set-info.c */; };
+		47A0D8B1256896370052975B /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75725688B800052975B /* compat.c */; };
+		47A0D8B2256896370052975B /* dcerpc-srvsvc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76D25688B800052975B /* dcerpc-srvsvc.c */; };
+		47A0D8B3256896370052975B /* smb3-seal.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77D25688B800052975B /* smb3-seal.c */; };
+		47A0D8B4256896370052975B /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78525688B800052975B /* md5.c */; };
+		47A0D8B5256896370052975B /* unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75225688B800052975B /* unicode.c */; };
+		47A0D8B6256896370052975B /* smb2-cmd-tree-disconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78825688B800052975B /* smb2-cmd-tree-disconnect.c */; };
+		47A0D8B7256896370052975B /* smb2-data-file-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78425688B800052975B /* smb2-data-file-info.c */; };
+		47A0D8B8256896370052975B /* smb2-cmd-session-setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77025688B800052975B /* smb2-cmd-session-setup.c */; };
+		47A0D8B9256896370052975B /* sha384-512.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76B25688B800052975B /* sha384-512.c */; };
+		47A0D8BA256896370052975B /* smb2-cmd-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78325688B800052975B /* smb2-cmd-read.c */; };
+		47A0D8BB256896370052975B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76525688B800052975B /* sha1.c */; };
+		47A0D8BC256896370052975B /* aes128ccm-test.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78725688B800052975B /* aes128ccm-test.c */; };
+		47A0D8BD256896370052975B /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D74F25688B800052975B /* aes.c */; };
+		47A0D8BE256896370052975B /* smb2-cmd-tree-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77B25688B800052975B /* smb2-cmd-tree-connect.c */; };
+		47A0D8BF256896370052975B /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79425688B800052975B /* errors.c */; };
+		47A0D8C0256896370052975B /* md4c.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77E25688B800052975B /* md4c.c */; };
+		47A0D8C1256896370052975B /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76225688B800052975B /* init.c */; };
+		47A0D8C2256896370052975B /* smb2-cmd-echo.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75F25688B800052975B /* smb2-cmd-echo.c */; };
+		47A0D8C3256896370052975B /* smb2-cmd-flush.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75A25688B800052975B /* smb2-cmd-flush.c */; };
+		47A0D8C4256896370052975B /* timestamps.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D74E25688B800052975B /* timestamps.c */; };
+		47A0D8C5256896370052975B /* libsmb2.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77725688B800052975B /* libsmb2.c */; };
+		47A0D8C6256896370052975B /* smb2-data-reparse-point.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75425688B800052975B /* smb2-data-reparse-point.c */; };
+		47A0D8C7256896370052975B /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76825688B800052975B /* alloc.c */; };
+		47A0D8C8256896370052975B /* hmac-md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D78225688B800052975B /* hmac-md5.c */; };
+		47A0D8C9256896370052975B /* dcerpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79125688B800052975B /* dcerpc.c */; };
+		47A0D8CA256896370052975B /* smb2-data-security-descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79225688B800052975B /* smb2-data-security-descriptor.c */; };
+		47A0D8CB256896370052975B /* usha.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76625688B800052975B /* usha.c */; };
+		47A0D8CC256896370052975B /* smb2-cmd-query-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75825688B800052975B /* smb2-cmd-query-info.c */; };
+		47A0D8CD256896370052975B /* smb2-cmd-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76F25688B800052975B /* smb2-cmd-error.c */; };
+		47A0D8CE256896370052975B /* ntlmssp.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79025688B800052975B /* ntlmssp.c */; };
+		47A0D8CF256896370052975B /* smb2-cmd-query-directory.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75125688B800052975B /* smb2-cmd-query-directory.c */; };
+		47A0D8D0256896370052975B /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76725688B800052975B /* socket.c */; };
+		47A0D8D1256896370052975B /* krb5-wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75C25688B800052975B /* krb5-wrapper.c */; };
+		47A0D8D2256896370052975B /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77825688B800052975B /* sync.c */; };
+		47A0D8D3256896370052975B /* sha224-256.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75E25688B800052975B /* sha224-256.c */; };
+		47A0D8D4256896370052975B /* smb2-share-enum.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77925688B800052975B /* smb2-share-enum.c */; };
+		47A0D8D5256896370052975B /* dcerpc-lsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75325688B800052975B /* dcerpc-lsa.c */; };
+		47A0D8D6256896370052975B /* smb2-cmd-negotiate.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77225688B800052975B /* smb2-cmd-negotiate.c */; };
+		47A0D8D7256896370052975B /* smb2-cmd-close.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D79325688B800052975B /* smb2-cmd-close.c */; };
+		47A0D8D8256896370052975B /* smb2-data-filesystem-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77F25688B800052975B /* smb2-data-filesystem-info.c */; };
+		47A0D8D9256896370052975B /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75025688B800052975B /* hmac.c */; };
+		47A0D8DA256896370052975B /* smb2-cmd-logoff.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76A25688B800052975B /* smb2-cmd-logoff.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47A0D72B25688B1D0052975B /* libsmb2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libsmb2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A0D72F25688B1D0052975B /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
+		47A0D73A25688B800052975B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		47A0D73B25688B800052975B /* portable-endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "portable-endian.h"; sourceTree = "<group>"; };
+		47A0D73E25688B800052975B /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		47A0D73F25688B800052975B /* poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poll.h; sourceTree = "<group>"; };
+		47A0D74025688B800052975B /* libsmb2-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsmb2-private.h"; sourceTree = "<group>"; };
+		47A0D74125688B800052975B /* asprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asprintf.h; sourceTree = "<group>"; };
+		47A0D74225688B800052975B /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		47A0D74325688B800052975B /* slist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slist.h; sourceTree = "<group>"; };
+		47A0D74525688B800052975B /* libsmb2-dcerpc-lsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsmb2-dcerpc-lsa.h"; sourceTree = "<group>"; };
+		47A0D74625688B800052975B /* libsmb2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsmb2.h; sourceTree = "<group>"; };
+		47A0D74725688B800052975B /* smb2-errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "smb2-errors.h"; sourceTree = "<group>"; };
+		47A0D74825688B800052975B /* smb2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smb2.h; sourceTree = "<group>"; };
+		47A0D74925688B800052975B /* libsmb2-dcerpc-srvsvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsmb2-dcerpc-srvsvc.h"; sourceTree = "<group>"; };
+		47A0D74A25688B800052975B /* libsmb2-dcerpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsmb2-dcerpc.h"; sourceTree = "<group>"; };
+		47A0D74B25688B800052975B /* libsmb2-raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsmb2-raw.h"; sourceTree = "<group>"; };
+		47A0D74D25688B800052975B /* smb2-signing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "smb2-signing.h"; sourceTree = "<group>"; };
+		47A0D74E25688B800052975B /* timestamps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timestamps.c; sourceTree = "<group>"; };
+		47A0D74F25688B800052975B /* aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes.c; sourceTree = "<group>"; };
+		47A0D75025688B800052975B /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		47A0D75125688B800052975B /* smb2-cmd-query-directory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-query-directory.c"; sourceTree = "<group>"; };
+		47A0D75225688B800052975B /* unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unicode.c; sourceTree = "<group>"; };
+		47A0D75325688B800052975B /* dcerpc-lsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dcerpc-lsa.c"; sourceTree = "<group>"; };
+		47A0D75425688B800052975B /* smb2-data-reparse-point.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-data-reparse-point.c"; sourceTree = "<group>"; };
+		47A0D75525688B800052975B /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		47A0D75625688B800052975B /* hmac-md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hmac-md5.h"; sourceTree = "<group>"; };
+		47A0D75725688B800052975B /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
+		47A0D75825688B800052975B /* smb2-cmd-query-info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-query-info.c"; sourceTree = "<group>"; };
+		47A0D75925688B800052975B /* aes128ccm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes128ccm.c; sourceTree = "<group>"; };
+		47A0D75A25688B800052975B /* smb2-cmd-flush.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-flush.c"; sourceTree = "<group>"; };
+		47A0D75B25688B800052975B /* smb3-seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "smb3-seal.h"; sourceTree = "<group>"; };
+		47A0D75C25688B800052975B /* krb5-wrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "krb5-wrapper.c"; sourceTree = "<group>"; };
+		47A0D75D25688B800052975B /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		47A0D75E25688B800052975B /* sha224-256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha224-256.c"; sourceTree = "<group>"; };
+		47A0D75F25688B800052975B /* smb2-cmd-echo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-echo.c"; sourceTree = "<group>"; };
+		47A0D76025688B800052975B /* smb2-cmd-set-info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-set-info.c"; sourceTree = "<group>"; };
+		47A0D76125688B800052975B /* ntlmssp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ntlmssp.h; sourceTree = "<group>"; };
+		47A0D76225688B800052975B /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		47A0D76325688B800052975B /* libsmb2.syms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libsmb2.syms; sourceTree = "<group>"; };
+		47A0D76425688B800052975B /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		47A0D76525688B800052975B /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		47A0D76625688B800052975B /* usha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usha.c; sourceTree = "<group>"; };
+		47A0D76725688B800052975B /* socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
+		47A0D76825688B800052975B /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		47A0D76925688B800052975B /* sha-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sha-private.h"; sourceTree = "<group>"; };
+		47A0D76A25688B800052975B /* smb2-cmd-logoff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-logoff.c"; sourceTree = "<group>"; };
+		47A0D76B25688B800052975B /* sha384-512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha384-512.c"; sourceTree = "<group>"; };
+		47A0D76C25688B800052975B /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		47A0D76D25688B800052975B /* dcerpc-srvsvc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dcerpc-srvsvc.c"; sourceTree = "<group>"; };
+		47A0D76E25688B800052975B /* pdu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pdu.c; sourceTree = "<group>"; };
+		47A0D76F25688B800052975B /* smb2-cmd-error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-error.c"; sourceTree = "<group>"; };
+		47A0D77025688B800052975B /* smb2-cmd-session-setup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-session-setup.c"; sourceTree = "<group>"; };
+		47A0D77125688B800052975B /* smb2-cmd-ioctl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-ioctl.c"; sourceTree = "<group>"; };
+		47A0D77225688B800052975B /* smb2-cmd-negotiate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-negotiate.c"; sourceTree = "<group>"; };
+		47A0D77325688B800052975B /* Makefile.PS2_EE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.PS2_EE; sourceTree = "<group>"; };
+		47A0D77425688B800052975B /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		47A0D77525688B800052975B /* smb2-signing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-signing.c"; sourceTree = "<group>"; };
+		47A0D77625688B800052975B /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		47A0D77725688B800052975B /* libsmb2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libsmb2.c; sourceTree = "<group>"; };
+		47A0D77825688B800052975B /* sync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sync.c; sourceTree = "<group>"; };
+		47A0D77925688B800052975B /* smb2-share-enum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-share-enum.c"; sourceTree = "<group>"; };
+		47A0D77A25688B800052975B /* krb5-wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "krb5-wrapper.h"; sourceTree = "<group>"; };
+		47A0D77B25688B800052975B /* smb2-cmd-tree-connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-tree-connect.c"; sourceTree = "<group>"; };
+		47A0D77C25688B800052975B /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		47A0D77D25688B800052975B /* smb3-seal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb3-seal.c"; sourceTree = "<group>"; };
+		47A0D77E25688B800052975B /* md4c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md4c.c; sourceTree = "<group>"; };
+		47A0D77F25688B800052975B /* smb2-data-filesystem-info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-data-filesystem-info.c"; sourceTree = "<group>"; };
+		47A0D78025688B800052975B /* aes128ccm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes128ccm.h; sourceTree = "<group>"; };
+		47A0D78125688B800052975B /* Makefile.PS3_PPU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.PS3_PPU; sourceTree = "<group>"; };
+		47A0D78225688B800052975B /* hmac-md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "hmac-md5.c"; sourceTree = "<group>"; };
+		47A0D78325688B800052975B /* smb2-cmd-read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-read.c"; sourceTree = "<group>"; };
+		47A0D78425688B800052975B /* smb2-data-file-info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-data-file-info.c"; sourceTree = "<group>"; };
+		47A0D78525688B800052975B /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		47A0D78625688B800052975B /* smb2-cmd-create.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-create.c"; sourceTree = "<group>"; };
+		47A0D78725688B800052975B /* aes128ccm-test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "aes128ccm-test.c"; sourceTree = "<group>"; };
+		47A0D78825688B800052975B /* smb2-cmd-tree-disconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-tree-disconnect.c"; sourceTree = "<group>"; };
+		47A0D78A25688B800052975B /* libnfs_la-libnfs.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libnfs_la-libnfs.Plo"; sourceTree = "<group>"; };
+		47A0D78B25688B800052975B /* libnfs_la-libnfs-sync.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libnfs_la-libnfs-sync.Plo"; sourceTree = "<group>"; };
+		47A0D78C25688B800052975B /* libnfs_la-pdu.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libnfs_la-pdu.Plo"; sourceTree = "<group>"; };
+		47A0D78D25688B800052975B /* libnfs_la-init.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libnfs_la-init.Plo"; sourceTree = "<group>"; };
+		47A0D78E25688B800052975B /* libnfs_la-socket.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libnfs_la-socket.Plo"; sourceTree = "<group>"; };
+		47A0D78F25688B800052975B /* libnfs_la-libnfs-zdr.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libnfs_la-libnfs-zdr.Plo"; sourceTree = "<group>"; };
+		47A0D79025688B800052975B /* ntlmssp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ntlmssp.c; sourceTree = "<group>"; };
+		47A0D79125688B800052975B /* dcerpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dcerpc.c; sourceTree = "<group>"; };
+		47A0D79225688B800052975B /* smb2-data-security-descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-data-security-descriptor.c"; sourceTree = "<group>"; };
+		47A0D79325688B800052975B /* smb2-cmd-close.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-close.c"; sourceTree = "<group>"; };
+		47A0D79425688B800052975B /* errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = errors.c; sourceTree = "<group>"; };
+		47A0D79525688B800052975B /* smb2-cmd-write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "smb2-cmd-write.c"; sourceTree = "<group>"; };
+		47A0D7F925688F2C0052975B /* libsmb2_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libsmb2_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A0D7FC25688F2C0052975B /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
+		47A0D808256893200052975B /* libsmb2_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libsmb2_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A0D80B256893200052975B /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47A0D72825688B1D0052975B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D7F625688F2C0052975B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D805256893200052975B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47A0D72125688B1D0052975B = {
+			isa = PBXGroup;
+			children = (
+				47A0D813256895330052975B /* xcode-config */,
+				47A0D73825688B800052975B /* include */,
+				47A0D74C25688B800052975B /* lib */,
+				47A0D72C25688B1D0052975B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47A0D72C25688B1D0052975B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D72B25688B1D0052975B /* libsmb2.framework */,
+				47A0D7F925688F2C0052975B /* libsmb2_tvOS.framework */,
+				47A0D808256893200052975B /* libsmb2_macOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47A0D73825688B800052975B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D73925688B800052975B /* esp */,
+				47A0D73B25688B800052975B /* portable-endian.h */,
+				47A0D73C25688B800052975B /* msvc */,
+				47A0D74025688B800052975B /* libsmb2-private.h */,
+				47A0D74125688B800052975B /* asprintf.h */,
+				47A0D74225688B800052975B /* Makefile.am */,
+				47A0D74325688B800052975B /* slist.h */,
+				47A0D74425688B800052975B /* smb2 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		47A0D73925688B800052975B /* esp */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D73A25688B800052975B /* config.h */,
+			);
+			path = esp;
+			sourceTree = "<group>";
+		};
+		47A0D73C25688B800052975B /* msvc */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D73D25688B800052975B /* sys */,
+				47A0D73F25688B800052975B /* poll.h */,
+			);
+			path = msvc;
+			sourceTree = "<group>";
+		};
+		47A0D73D25688B800052975B /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D73E25688B800052975B /* socket.h */,
+			);
+			path = sys;
+			sourceTree = "<group>";
+		};
+		47A0D74425688B800052975B /* smb2 */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D74525688B800052975B /* libsmb2-dcerpc-lsa.h */,
+				47A0D74625688B800052975B /* libsmb2.h */,
+				47A0D74725688B800052975B /* smb2-errors.h */,
+				47A0D74825688B800052975B /* smb2.h */,
+				47A0D74925688B800052975B /* libsmb2-dcerpc-srvsvc.h */,
+				47A0D74A25688B800052975B /* libsmb2-dcerpc.h */,
+				47A0D74B25688B800052975B /* libsmb2-raw.h */,
+			);
+			path = smb2;
+			sourceTree = "<group>";
+		};
+		47A0D74C25688B800052975B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D74D25688B800052975B /* smb2-signing.h */,
+				47A0D74E25688B800052975B /* timestamps.c */,
+				47A0D74F25688B800052975B /* aes.c */,
+				47A0D75025688B800052975B /* hmac.c */,
+				47A0D75125688B800052975B /* smb2-cmd-query-directory.c */,
+				47A0D75225688B800052975B /* unicode.c */,
+				47A0D75325688B800052975B /* dcerpc-lsa.c */,
+				47A0D75425688B800052975B /* smb2-data-reparse-point.c */,
+				47A0D75525688B800052975B /* CMakeLists.txt */,
+				47A0D75625688B800052975B /* hmac-md5.h */,
+				47A0D75725688B800052975B /* compat.c */,
+				47A0D75825688B800052975B /* smb2-cmd-query-info.c */,
+				47A0D75925688B800052975B /* aes128ccm.c */,
+				47A0D75A25688B800052975B /* smb2-cmd-flush.c */,
+				47A0D75B25688B800052975B /* smb3-seal.h */,
+				47A0D75C25688B800052975B /* krb5-wrapper.c */,
+				47A0D75D25688B800052975B /* sha.h */,
+				47A0D75E25688B800052975B /* sha224-256.c */,
+				47A0D75F25688B800052975B /* smb2-cmd-echo.c */,
+				47A0D76025688B800052975B /* smb2-cmd-set-info.c */,
+				47A0D76125688B800052975B /* ntlmssp.h */,
+				47A0D76225688B800052975B /* init.c */,
+				47A0D76325688B800052975B /* libsmb2.syms */,
+				47A0D76425688B800052975B /* md5.h */,
+				47A0D76525688B800052975B /* sha1.c */,
+				47A0D76625688B800052975B /* usha.c */,
+				47A0D76725688B800052975B /* socket.c */,
+				47A0D76825688B800052975B /* alloc.c */,
+				47A0D76925688B800052975B /* sha-private.h */,
+				47A0D76A25688B800052975B /* smb2-cmd-logoff.c */,
+				47A0D76B25688B800052975B /* sha384-512.c */,
+				47A0D76C25688B800052975B /* Makefile.am */,
+				47A0D76D25688B800052975B /* dcerpc-srvsvc.c */,
+				47A0D76E25688B800052975B /* pdu.c */,
+				47A0D76F25688B800052975B /* smb2-cmd-error.c */,
+				47A0D77025688B800052975B /* smb2-cmd-session-setup.c */,
+				47A0D77125688B800052975B /* smb2-cmd-ioctl.c */,
+				47A0D77225688B800052975B /* smb2-cmd-negotiate.c */,
+				47A0D77325688B800052975B /* Makefile.PS2_EE */,
+				47A0D77425688B800052975B /* md4.h */,
+				47A0D77525688B800052975B /* smb2-signing.c */,
+				47A0D77625688B800052975B /* aes.h */,
+				47A0D77725688B800052975B /* libsmb2.c */,
+				47A0D77825688B800052975B /* sync.c */,
+				47A0D77925688B800052975B /* smb2-share-enum.c */,
+				47A0D77A25688B800052975B /* krb5-wrapper.h */,
+				47A0D77B25688B800052975B /* smb2-cmd-tree-connect.c */,
+				47A0D77C25688B800052975B /* compat.h */,
+				47A0D77D25688B800052975B /* smb3-seal.c */,
+				47A0D77E25688B800052975B /* md4c.c */,
+				47A0D77F25688B800052975B /* smb2-data-filesystem-info.c */,
+				47A0D78025688B800052975B /* aes128ccm.h */,
+				47A0D78125688B800052975B /* Makefile.PS3_PPU */,
+				47A0D78225688B800052975B /* hmac-md5.c */,
+				47A0D78325688B800052975B /* smb2-cmd-read.c */,
+				47A0D78425688B800052975B /* smb2-data-file-info.c */,
+				47A0D78525688B800052975B /* md5.c */,
+				47A0D78625688B800052975B /* smb2-cmd-create.c */,
+				47A0D78725688B800052975B /* aes128ccm-test.c */,
+				47A0D78825688B800052975B /* smb2-cmd-tree-disconnect.c */,
+				47A0D78925688B800052975B /* .deps */,
+				47A0D79025688B800052975B /* ntlmssp.c */,
+				47A0D79125688B800052975B /* dcerpc.c */,
+				47A0D79225688B800052975B /* smb2-data-security-descriptor.c */,
+				47A0D79325688B800052975B /* smb2-cmd-close.c */,
+				47A0D79425688B800052975B /* errors.c */,
+				47A0D79525688B800052975B /* smb2-cmd-write.c */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		47A0D78925688B800052975B /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D78A25688B800052975B /* libnfs_la-libnfs.Plo */,
+				47A0D78B25688B800052975B /* libnfs_la-libnfs-sync.Plo */,
+				47A0D78C25688B800052975B /* libnfs_la-pdu.Plo */,
+				47A0D78D25688B800052975B /* libnfs_la-init.Plo */,
+				47A0D78E25688B800052975B /* libnfs_la-socket.Plo */,
+				47A0D78F25688B800052975B /* libnfs_la-libnfs-zdr.Plo */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		47A0D813256895330052975B /* xcode-config */ = {
+			isa = PBXGroup;
+			children = (
+				47A0D72F25688B1D0052975B /* iOS.plist */,
+				47A0D7FC25688F2C0052975B /* tvOS.plist */,
+				47A0D80B256893200052975B /* macOS.plist */,
+			);
+			path = "xcode-config";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47A0D72625688B1D0052975B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A0D7B925688B800052975B /* ntlmssp.h in Headers */,
+				47A0D7A025688B800052975B /* smb2-errors.h in Headers */,
+				47A0D79F25688B800052975B /* libsmb2.h in Headers */,
+				47A0D7A325688B800052975B /* libsmb2-dcerpc.h in Headers */,
+				47A0D79E25688B800052975B /* libsmb2-dcerpc-lsa.h in Headers */,
+				47A0D7A425688B800052975B /* libsmb2-raw.h in Headers */,
+				47A0D7A125688B800052975B /* smb2.h in Headers */,
+				47A0D7A225688B800052975B /* libsmb2-dcerpc-srvsvc.h in Headers */,
+				47A0D79A25688B800052975B /* libsmb2-private.h in Headers */,
+				47A0D79725688B800052975B /* portable-endian.h in Headers */,
+				47A0D7AE25688B800052975B /* hmac-md5.h in Headers */,
+				47A0D7A525688B800052975B /* smb2-signing.h in Headers */,
+				47A0D79625688B800052975B /* config.h in Headers */,
+				47A0D7CC25688B800052975B /* md4.h in Headers */,
+				47A0D7CE25688B800052975B /* aes.h in Headers */,
+				47A0D79D25688B800052975B /* slist.h in Headers */,
+				47A0D7D825688B800052975B /* aes128ccm.h in Headers */,
+				47A0D7D225688B800052975B /* krb5-wrapper.h in Headers */,
+				47A0D7B325688B800052975B /* smb3-seal.h in Headers */,
+				47A0D79B25688B800052975B /* asprintf.h in Headers */,
+				47A0D7BC25688B800052975B /* md5.h in Headers */,
+				47A0D7C125688B800052975B /* sha-private.h in Headers */,
+				47A0D79825688B800052975B /* socket.h in Headers */,
+				47A0D7D425688B800052975B /* compat.h in Headers */,
+				47A0D7B525688B800052975B /* sha.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D7F425688F2C0052975B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A0D836256895DE0052975B /* libsmb2-dcerpc-lsa.h in Headers */,
+				47A0D823256895D20052975B /* portable-endian.h in Headers */,
+				47A0D85D256896120052975B /* compat.h in Headers */,
+				47A0D822256895D20052975B /* socket.h in Headers */,
+				47A0D863256896130052975B /* hmac-md5.h in Headers */,
+				47A0D834256895DE0052975B /* libsmb2-dcerpc-srvsvc.h in Headers */,
+				47A0D860256896130052975B /* krb5-wrapper.h in Headers */,
+				47A0D852256895F40052975B /* smb2-signing.h in Headers */,
+				47A0D844256895E30052975B /* libsmb2-private.h in Headers */,
+				47A0D833256895DE0052975B /* smb2.h in Headers */,
+				47A0D85B256896120052975B /* sha.h in Headers */,
+				47A0D861256896130052975B /* aes128ccm.h in Headers */,
+				47A0D832256895DE0052975B /* libsmb2.h in Headers */,
+				47A0D821256895D20052975B /* config.h in Headers */,
+				47A0D864256896130052975B /* md4.h in Headers */,
+				47A0D862256896130052975B /* ntlmssp.h in Headers */,
+				47A0D820256895D20052975B /* slist.h in Headers */,
+				47A0D824256895D20052975B /* asprintf.h in Headers */,
+				47A0D835256895DE0052975B /* libsmb2-raw.h in Headers */,
+				47A0D85C256896120052975B /* aes.h in Headers */,
+				47A0D85F256896130052975B /* sha-private.h in Headers */,
+				47A0D85A256896120052975B /* smb3-seal.h in Headers */,
+				47A0D831256895DE0052975B /* libsmb2-dcerpc.h in Headers */,
+				47A0D830256895DE0052975B /* smb2-errors.h in Headers */,
+				47A0D85E256896120052975B /* md5.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D803256893200052975B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A0D840256895DE0052975B /* libsmb2-dcerpc-lsa.h in Headers */,
+				47A0D82B256895D30052975B /* portable-endian.h in Headers */,
+				47A0D86B256896130052975B /* compat.h in Headers */,
+				47A0D82A256895D30052975B /* socket.h in Headers */,
+				47A0D871256896130052975B /* hmac-md5.h in Headers */,
+				47A0D83E256895DE0052975B /* libsmb2-dcerpc-srvsvc.h in Headers */,
+				47A0D86E256896130052975B /* krb5-wrapper.h in Headers */,
+				47A0D856256895F50052975B /* smb2-signing.h in Headers */,
+				47A0D848256895E30052975B /* libsmb2-private.h in Headers */,
+				47A0D83D256895DE0052975B /* smb2.h in Headers */,
+				47A0D869256896130052975B /* sha.h in Headers */,
+				47A0D86F256896130052975B /* aes128ccm.h in Headers */,
+				47A0D83C256895DE0052975B /* libsmb2.h in Headers */,
+				47A0D829256895D30052975B /* config.h in Headers */,
+				47A0D872256896130052975B /* md4.h in Headers */,
+				47A0D870256896130052975B /* ntlmssp.h in Headers */,
+				47A0D828256895D30052975B /* slist.h in Headers */,
+				47A0D82C256895D30052975B /* asprintf.h in Headers */,
+				47A0D83F256895DE0052975B /* libsmb2-raw.h in Headers */,
+				47A0D86A256896130052975B /* aes.h in Headers */,
+				47A0D86D256896130052975B /* sha-private.h in Headers */,
+				47A0D868256896130052975B /* smb3-seal.h in Headers */,
+				47A0D83B256895DE0052975B /* libsmb2-dcerpc.h in Headers */,
+				47A0D83A256895DE0052975B /* smb2-errors.h in Headers */,
+				47A0D86C256896130052975B /* md5.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47A0D72A25688B1D0052975B /* libsmb2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47A0D73325688B1D0052975B /* Build configuration list for PBXNativeTarget "libsmb2" */;
+			buildPhases = (
+				47A0D72625688B1D0052975B /* Headers */,
+				47A0D72725688B1D0052975B /* Sources */,
+				47A0D72825688B1D0052975B /* Frameworks */,
+				47A0D72925688B1D0052975B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libsmb2;
+			productName = libsmb2;
+			productReference = 47A0D72B25688B1D0052975B /* libsmb2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47A0D7F825688F2C0052975B /* libsmb2-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47A0D7FE25688F2C0052975B /* Build configuration list for PBXNativeTarget "libsmb2-tvOS" */;
+			buildPhases = (
+				47A0D7F425688F2C0052975B /* Headers */,
+				47A0D7F525688F2C0052975B /* Sources */,
+				47A0D7F625688F2C0052975B /* Frameworks */,
+				47A0D7F725688F2C0052975B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libsmb2-tvOS";
+			productName = "libsmb2-tvOS";
+			productReference = 47A0D7F925688F2C0052975B /* libsmb2_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47A0D807256893200052975B /* libsmb2-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47A0D80D256893200052975B /* Build configuration list for PBXNativeTarget "libsmb2-macOS" */;
+			buildPhases = (
+				47A0D803256893200052975B /* Headers */,
+				47A0D804256893200052975B /* Sources */,
+				47A0D805256893200052975B /* Frameworks */,
+				47A0D806256893200052975B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libsmb2-macOS";
+			productName = "libsmb2-macOS";
+			productReference = 47A0D808256893200052975B /* libsmb2_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47A0D72225688B1D0052975B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					47A0D72A25688B1D0052975B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					47A0D7F825688F2C0052975B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					47A0D807256893200052975B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 47A0D72525688B1D0052975B /* Build configuration list for PBXProject "libsmb2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47A0D72125688B1D0052975B;
+			productRefGroup = 47A0D72C25688B1D0052975B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47A0D72A25688B1D0052975B /* libsmb2 */,
+				47A0D7F825688F2C0052975B /* libsmb2-tvOS */,
+				47A0D807256893200052975B /* libsmb2-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47A0D72925688B1D0052975B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D7F725688F2C0052975B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D806256893200052975B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47A0D72725688B1D0052975B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A0D7CD25688B800052975B /* smb2-signing.c in Sources */,
+				47A0D7AC25688B800052975B /* smb2-data-reparse-point.c in Sources */,
+				47A0D7C825688B800052975B /* smb2-cmd-session-setup.c in Sources */,
+				47A0D7B425688B800052975B /* krb5-wrapper.c in Sources */,
+				47A0D7C225688B800052975B /* smb2-cmd-logoff.c in Sources */,
+				47A0D7A825688B800052975B /* hmac.c in Sources */,
+				47A0D7DB25688B800052975B /* smb2-cmd-read.c in Sources */,
+				47A0D7EA25688B800052975B /* smb2-cmd-close.c in Sources */,
+				47A0D7C025688B800052975B /* alloc.c in Sources */,
+				47A0D7C325688B800052975B /* sha384-512.c in Sources */,
+				47A0D7E825688B800052975B /* dcerpc.c in Sources */,
+				47A0D7BD25688B800052975B /* sha1.c in Sources */,
+				47A0D7DA25688B800052975B /* hmac-md5.c in Sources */,
+				47A0D7E725688B800052975B /* ntlmssp.c in Sources */,
+				47A0D7B625688B800052975B /* sha224-256.c in Sources */,
+				47A0D7D725688B800052975B /* smb2-data-filesystem-info.c in Sources */,
+				47A0D7B825688B800052975B /* smb2-cmd-set-info.c in Sources */,
+				47A0D7C525688B800052975B /* dcerpc-srvsvc.c in Sources */,
+				47A0D7C725688B800052975B /* smb2-cmd-error.c in Sources */,
+				47A0D7A925688B800052975B /* smb2-cmd-query-directory.c in Sources */,
+				47A0D7D325688B800052975B /* smb2-cmd-tree-connect.c in Sources */,
+				47A0D7D625688B800052975B /* md4c.c in Sources */,
+				47A0D7EB25688B800052975B /* errors.c in Sources */,
+				47A0D7DF25688B800052975B /* aes128ccm-test.c in Sources */,
+				47A0D7E925688B800052975B /* smb2-data-security-descriptor.c in Sources */,
+				47A0D7D525688B800052975B /* smb3-seal.c in Sources */,
+				47A0D7B125688B800052975B /* aes128ccm.c in Sources */,
+				47A0D7A625688B800052975B /* timestamps.c in Sources */,
+				47A0D7B025688B800052975B /* smb2-cmd-query-info.c in Sources */,
+				47A0D7CF25688B800052975B /* libsmb2.c in Sources */,
+				47A0D7BE25688B800052975B /* usha.c in Sources */,
+				47A0D7C625688B800052975B /* pdu.c in Sources */,
+				47A0D7DC25688B800052975B /* smb2-data-file-info.c in Sources */,
+				47A0D7BF25688B800052975B /* socket.c in Sources */,
+				47A0D7AB25688B800052975B /* dcerpc-lsa.c in Sources */,
+				47A0D7AF25688B800052975B /* compat.c in Sources */,
+				47A0D7BA25688B800052975B /* init.c in Sources */,
+				47A0D7D125688B800052975B /* smb2-share-enum.c in Sources */,
+				47A0D7C925688B800052975B /* smb2-cmd-ioctl.c in Sources */,
+				47A0D7A725688B800052975B /* aes.c in Sources */,
+				47A0D7E025688B800052975B /* smb2-cmd-tree-disconnect.c in Sources */,
+				47A0D7B225688B800052975B /* smb2-cmd-flush.c in Sources */,
+				47A0D7EC25688B800052975B /* smb2-cmd-write.c in Sources */,
+				47A0D7DE25688B800052975B /* smb2-cmd-create.c in Sources */,
+				47A0D7AA25688B800052975B /* unicode.c in Sources */,
+				47A0D7DD25688B800052975B /* md5.c in Sources */,
+				47A0D7B725688B800052975B /* smb2-cmd-echo.c in Sources */,
+				47A0D7D025688B800052975B /* sync.c in Sources */,
+				47A0D7CA25688B800052975B /* smb2-cmd-negotiate.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D7F525688F2C0052975B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A0D8A5256896370052975B /* hmac.c in Sources */,
+				47A0D880256896360052975B /* md5.c in Sources */,
+				47A0D8A6256896370052975B /* smb2-cmd-logoff.c in Sources */,
+				47A0D87E256896360052975B /* dcerpc-srvsvc.c in Sources */,
+				47A0D88E256896370052975B /* smb2-cmd-echo.c in Sources */,
+				47A0D893256896370052975B /* alloc.c in Sources */,
+				47A0D88A256896370052975B /* smb2-cmd-tree-connect.c in Sources */,
+				47A0D89C256896370052975B /* socket.c in Sources */,
+				47A0D88D256896370052975B /* init.c in Sources */,
+				47A0D891256896370052975B /* libsmb2.c in Sources */,
+				47A0D88C256896370052975B /* md4c.c in Sources */,
+				47A0D8A3256896370052975B /* smb2-cmd-close.c in Sources */,
+				47A0D886256896370052975B /* smb2-cmd-read.c in Sources */,
+				47A0D892256896370052975B /* smb2-data-reparse-point.c in Sources */,
+				47A0D895256896370052975B /* dcerpc.c in Sources */,
+				47A0D896256896370052975B /* smb2-data-security-descriptor.c in Sources */,
+				47A0D889256896370052975B /* aes.c in Sources */,
+				47A0D877256896360052975B /* smb2-cmd-create.c in Sources */,
+				47A0D894256896370052975B /* hmac-md5.c in Sources */,
+				47A0D876256896360052975B /* smb2-cmd-ioctl.c in Sources */,
+				47A0D878256896360052975B /* smb2-cmd-write.c in Sources */,
+				47A0D8A4256896370052975B /* smb2-data-filesystem-info.c in Sources */,
+				47A0D883256896360052975B /* smb2-data-file-info.c in Sources */,
+				47A0D8A0256896370052975B /* smb2-share-enum.c in Sources */,
+				47A0D897256896370052975B /* usha.c in Sources */,
+				47A0D882256896360052975B /* smb2-cmd-tree-disconnect.c in Sources */,
+				47A0D87B256896360052975B /* smb2-signing.c in Sources */,
+				47A0D884256896370052975B /* smb2-cmd-session-setup.c in Sources */,
+				47A0D88B256896370052975B /* errors.c in Sources */,
+				47A0D87A256896360052975B /* aes128ccm.c in Sources */,
+				47A0D89F256896370052975B /* sha224-256.c in Sources */,
+				47A0D89D256896370052975B /* krb5-wrapper.c in Sources */,
+				47A0D87D256896360052975B /* compat.c in Sources */,
+				47A0D887256896370052975B /* sha1.c in Sources */,
+				47A0D87F256896360052975B /* smb3-seal.c in Sources */,
+				47A0D89B256896370052975B /* smb2-cmd-query-directory.c in Sources */,
+				47A0D89E256896370052975B /* sync.c in Sources */,
+				47A0D8A2256896370052975B /* smb2-cmd-negotiate.c in Sources */,
+				47A0D881256896360052975B /* unicode.c in Sources */,
+				47A0D888256896370052975B /* aes128ccm-test.c in Sources */,
+				47A0D8A1256896370052975B /* dcerpc-lsa.c in Sources */,
+				47A0D899256896370052975B /* smb2-cmd-error.c in Sources */,
+				47A0D885256896370052975B /* sha384-512.c in Sources */,
+				47A0D89A256896370052975B /* ntlmssp.c in Sources */,
+				47A0D890256896370052975B /* timestamps.c in Sources */,
+				47A0D898256896370052975B /* smb2-cmd-query-info.c in Sources */,
+				47A0D87C256896360052975B /* smb2-cmd-set-info.c in Sources */,
+				47A0D879256896360052975B /* pdu.c in Sources */,
+				47A0D88F256896370052975B /* smb2-cmd-flush.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A0D804256893200052975B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A0D8D9256896370052975B /* hmac.c in Sources */,
+				47A0D8B4256896370052975B /* md5.c in Sources */,
+				47A0D8DA256896370052975B /* smb2-cmd-logoff.c in Sources */,
+				47A0D8B2256896370052975B /* dcerpc-srvsvc.c in Sources */,
+				47A0D8C2256896370052975B /* smb2-cmd-echo.c in Sources */,
+				47A0D8C7256896370052975B /* alloc.c in Sources */,
+				47A0D8BE256896370052975B /* smb2-cmd-tree-connect.c in Sources */,
+				47A0D8D0256896370052975B /* socket.c in Sources */,
+				47A0D8C1256896370052975B /* init.c in Sources */,
+				47A0D8C5256896370052975B /* libsmb2.c in Sources */,
+				47A0D8C0256896370052975B /* md4c.c in Sources */,
+				47A0D8D7256896370052975B /* smb2-cmd-close.c in Sources */,
+				47A0D8BA256896370052975B /* smb2-cmd-read.c in Sources */,
+				47A0D8C6256896370052975B /* smb2-data-reparse-point.c in Sources */,
+				47A0D8C9256896370052975B /* dcerpc.c in Sources */,
+				47A0D8CA256896370052975B /* smb2-data-security-descriptor.c in Sources */,
+				47A0D8BD256896370052975B /* aes.c in Sources */,
+				47A0D8AB256896370052975B /* smb2-cmd-create.c in Sources */,
+				47A0D8C8256896370052975B /* hmac-md5.c in Sources */,
+				47A0D8AA256896370052975B /* smb2-cmd-ioctl.c in Sources */,
+				47A0D8AC256896370052975B /* smb2-cmd-write.c in Sources */,
+				47A0D8D8256896370052975B /* smb2-data-filesystem-info.c in Sources */,
+				47A0D8B7256896370052975B /* smb2-data-file-info.c in Sources */,
+				47A0D8D4256896370052975B /* smb2-share-enum.c in Sources */,
+				47A0D8CB256896370052975B /* usha.c in Sources */,
+				47A0D8B6256896370052975B /* smb2-cmd-tree-disconnect.c in Sources */,
+				47A0D8AF256896370052975B /* smb2-signing.c in Sources */,
+				47A0D8B8256896370052975B /* smb2-cmd-session-setup.c in Sources */,
+				47A0D8BF256896370052975B /* errors.c in Sources */,
+				47A0D8AE256896370052975B /* aes128ccm.c in Sources */,
+				47A0D8D3256896370052975B /* sha224-256.c in Sources */,
+				47A0D8D1256896370052975B /* krb5-wrapper.c in Sources */,
+				47A0D8B1256896370052975B /* compat.c in Sources */,
+				47A0D8BB256896370052975B /* sha1.c in Sources */,
+				47A0D8B3256896370052975B /* smb3-seal.c in Sources */,
+				47A0D8CF256896370052975B /* smb2-cmd-query-directory.c in Sources */,
+				47A0D8D2256896370052975B /* sync.c in Sources */,
+				47A0D8D6256896370052975B /* smb2-cmd-negotiate.c in Sources */,
+				47A0D8B5256896370052975B /* unicode.c in Sources */,
+				47A0D8BC256896370052975B /* aes128ccm-test.c in Sources */,
+				47A0D8D5256896370052975B /* dcerpc-lsa.c in Sources */,
+				47A0D8CD256896370052975B /* smb2-cmd-error.c in Sources */,
+				47A0D8B9256896370052975B /* sha384-512.c in Sources */,
+				47A0D8CE256896370052975B /* ntlmssp.c in Sources */,
+				47A0D8C4256896370052975B /* timestamps.c in Sources */,
+				47A0D8CC256896370052975B /* smb2-cmd-query-info.c in Sources */,
+				47A0D8B0256896370052975B /* smb2-cmd-set-info.c in Sources */,
+				47A0D8AD256896370052975B /* pdu.c in Sources */,
+				47A0D8C3256896370052975B /* smb2-cmd-flush.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47A0D73125688B1D0052975B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47A0D73225688B1D0052975B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47A0D73425688B1D0052975B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/xcode-config/iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icharleshu.libsmb2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		47A0D73525688B1D0052975B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/xcode-config/iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icharleshu.libsmb2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		47A0D7FF25688F2C0052975B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/xcode-config/tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Debug;
+		};
+		47A0D80025688F2C0052975B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/xcode-config/tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Release;
+		};
+		47A0D80E256893200052975B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/xcode-config/macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		47A0D80F256893200052975B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/xcode-config/macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47A0D72525688B1D0052975B /* Build configuration list for PBXProject "libsmb2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47A0D73125688B1D0052975B /* Debug */,
+				47A0D73225688B1D0052975B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47A0D73325688B1D0052975B /* Build configuration list for PBXNativeTarget "libsmb2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47A0D73425688B1D0052975B /* Debug */,
+				47A0D73525688B1D0052975B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47A0D7FE25688F2C0052975B /* Build configuration list for PBXNativeTarget "libsmb2-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47A0D7FF25688F2C0052975B /* Debug */,
+				47A0D80025688F2C0052975B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47A0D80D256893200052975B /* Build configuration list for PBXNativeTarget "libsmb2-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47A0D80E256893200052975B /* Debug */,
+				47A0D80F256893200052975B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47A0D72225688B1D0052975B /* Project object */;
+}
