@@ -1,0 +1,6 @@
+framework module libsmb2 {
+  umbrella header "libsmb2.h"
+
+  export *
+  module * { export * }
+}

@@ -18,7 +18,6 @@ autom4te.cache
 build/
 compile
 config.guess
-config.h
 config.h.in
 config.h.in~
 config.log
@@ -33,3 +32,4 @@ stamp-h1
 libsmb2.pc
 libtool
 ltmain.sh
+stage/
