@@ -229,6 +229,7 @@
 		47A0D8D8256896370052975B /* smb2-data-filesystem-info.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D77F25688B800052975B /* smb2-data-filesystem-info.c */; };
 		47A0D8D9256896370052975B /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D75025688B800052975B /* hmac.c */; };
 		47A0D8DA256896370052975B /* smb2-cmd-logoff.c in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D76A25688B800052975B /* smb2-cmd-logoff.c */; };
+		47A0D8FA256B93110052975B /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0D8F9256B93110052975B /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -325,6 +326,7 @@
 		47A0D7FC25688F2C0052975B /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
 		47A0D808256893200052975B /* libsmb2_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libsmb2_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A0D80B256893200052975B /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
+		47A0D8F9256B93110052975B /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +357,7 @@
 		47A0D72125688B1D0052975B = {
 			isa = PBXGroup;
 			children = (
+				47A0D8F9256B93110052975B /* Package.swift */,
 				47A0D813256895330052975B /* xcode-config */,
 				47A0D73825688B800052975B /* include */,
 				47A0D74C25688B800052975B /* lib */,
@@ -689,6 +692,7 @@
 				TargetAttributes = {
 					47A0D72A25688B1D0052975B = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					47A0D7F825688F2C0052975B = {
 						CreatedOnToolsVersion = 12.2;
@@ -773,6 +777,7 @@
 				47A0D7DF25688B800052975B /* aes128ccm-test.c in Sources */,
 				47A0D7E925688B800052975B /* smb2-data-security-descriptor.c in Sources */,
 				47A0D7D525688B800052975B /* smb3-seal.c in Sources */,
+				47A0D8FA256B93110052975B /* Package.swift in Sources */,
 				47A0D7B125688B800052975B /* aes128ccm.c in Sources */,
 				47A0D7A625688B800052975B /* timestamps.c in Sources */,
 				47A0D7B025688B800052975B /* smb2-cmd-query-info.c in Sources */,
@@ -1038,6 +1043,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1060,6 +1066,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icharleshu.libsmb2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
@@ -1068,6 +1076,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1086,6 +1095,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icharleshu.libsmb2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
