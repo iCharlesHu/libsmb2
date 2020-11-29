@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/libsmb2.h</key>
 		<data>
-		9oclUhDYTSTNEwpKz4FcT10vUpc=
+		CZ4A2qtwkOBy5C+ZY8S3d1QoTQQ=
 		</data>
 		<key>Headers/smb2-errors.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		4pIwg9g7+d0RMzInJewNrsVrQT0=
+		up7mCvDBBAwp5hFPztELQe6bVKY=
 		</data>
 		<key>PrivateHeaders/libsmb2-private.h</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9N6F3SwnAC51b06P53IUyAbUtJyz7OzwKn/yOjNgA6M=
+			3D6ufOHtkKl8jXeLrJQSc1ffYr2VJwnGuWkcknIwJT8=
 			</data>
 		</dict>
 		<key>Headers/smb2-errors.h</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8wbKkm7UaJtvB+BbUHHSyQUX8QQoO4LDLGq8KYJ0Bc=
+			sKrjkHArZmNNYp+XqwdRe3uPybwKSB9y1O/0puKUVlM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/libsmb2-private.h</key>

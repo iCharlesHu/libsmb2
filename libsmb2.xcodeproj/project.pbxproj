@@ -321,6 +321,7 @@
 		47A0D80B256893200052975B /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		47A0D8F9256B93110052975B /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		47A0D901256DE97C0052975B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		47A59492256F8B900088AC52 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +352,7 @@
 		47A0D72125688B1D0052975B = {
 			isa = PBXGroup;
 			children = (
+				47A59492256F8B900088AC52 /* module.modulemap */,
 				47A0D901256DE97C0052975B /* config.h */,
 				47A0D8F9256B93110052975B /* Package.swift */,
 				47A0D813256895330052975B /* xcode-config */,
@@ -1051,6 +1053,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
+				MODULEMAP_FILE = "$(SRCROOT)/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icharleshu.libsmb2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
@@ -1080,6 +1083,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
+				MODULEMAP_FILE = "$(SRCROOT)/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icharleshu.libsmb2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
@@ -1111,6 +1115,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
+				MODULEMAP_FILE = "$(SRCROOT)/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
@@ -1139,6 +1144,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
+				MODULEMAP_FILE = "$(SRCROOT)/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
@@ -1173,6 +1179,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 0.1;
+				MODULEMAP_FILE = "$(SRCROOT)/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
@@ -1201,6 +1208,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 0.1;
+				MODULEMAP_FILE = "$(SRCROOT)/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icharleshu.libsmb2-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
