@@ -1,11 +1,11 @@
 framework module libsmb2 [extern_c] {
-    header "smb2/libsmb2.h"
-    header "smb2/smb2.h"
-    header "smb2/libsmb2-dcerpc-srvsvc.h"
-    header "smb2/smb2-errors.h"
+    header "libsmb2.h"
+    header "smb2.h"
+    header "libsmb2-dcerpc-srvsvc.h"
+    header "smb2-errors.h"
     
     explicit module Raw {
-        header "smb2/libsmb2-raw.h"
+        header "libsmb2-raw.h"
     }
     
     export libsmb2

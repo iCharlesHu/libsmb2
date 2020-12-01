@@ -32,7 +32,7 @@
 
 #include "compat.h"
 
-#include "smb2.h"
+#include <smb2.h>
 
 const char *nterror_to_str(uint32_t status) {
         switch (status) {

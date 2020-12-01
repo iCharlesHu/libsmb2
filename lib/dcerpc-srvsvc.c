@@ -56,11 +56,11 @@
 
 #include "compat.h"
 
-#include "smb2.h"
-#include "libsmb2.h"
-#include "libsmb2-dcerpc.h"
-#include "libsmb2-dcerpc-srvsvc.h"
-#include "libsmb2-raw.h"
+#include <smb2.h>
+#include <libsmb2.h>
+#include <libsmb2-dcerpc.h>
+#include <libsmb2-dcerpc-srvsvc.h>
+#include <libsmb2-raw.h>
 #include "libsmb2-private.h"
 
 #define SRVSVC_UUID    0x4b324fc8, 0x1670, 0x01d3, 0x12785a47bf6ee188

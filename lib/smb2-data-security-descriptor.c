@@ -44,8 +44,8 @@
 #include "compat.h"
 
 #include "slist.h"
-#include "smb2.h"
-#include "libsmb2.h"
+#include <smb2.h>
+#include <libsmb2.h>
 #include "libsmb2-private.h"
 
 static struct smb2_sid *

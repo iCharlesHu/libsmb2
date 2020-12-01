@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3D6ufOHtkKl8jXeLrJQSc1ffYr2VJwnGuWkcknIwJT8=
+			MpIYN7Z9zSvGFiSDhOYzkvQvWI07kjXrYm4p1vxLOuM=
 			</data>
 		</dict>
 		<key>Headers/smb2-errors.h</key>
@@ -57,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GAnfQJ36UVXVMokzQgKfkszAZECvT8xmCYo3A114z6A=
+			zISCHUjl51jOkN74Ep1QPAgJpMlSKixOPDiwKHhKWzE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKrjkHArZmNNYp+XqwdRe3uPybwKSB9y1O/0puKUVlM=
+			cWjjBG+ZNHVujRFlgo2loxUgD8w6kL8Lge8WMVpq3Ws=
 			</data>
 		</dict>
 		<key>PrivateHeaders/libsmb2-private.h</key>

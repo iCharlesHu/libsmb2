@@ -56,10 +56,10 @@
 
 #include "compat.h"
 
-#include "smb2.h"
-#include "libsmb2.h"
+#include <smb2.h>
+#include <libsmb2.h>
 #include "libsmb2-dcerpc.h"
-#include "libsmb2-raw.h"
+#include <libsmb2-raw.h>
 #include "libsmb2-private.h"
 
 #define container_of(ptr, type, member) ({                      \
