@@ -39,10 +39,10 @@
 #include <stddef.h>
 #endif
 
-#include "portable-endian.h"
+#include <portable-endian.h>
 
-#include <smb2.h>
-#include <libsmb2.h>
+#include <smb2/smb2.h>
+#include <smb2/libsmb2.h>
 #include "libsmb2-private.h"
 
 /* Count number of leading 1 bits in the char */

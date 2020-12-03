@@ -56,11 +56,11 @@
 
 #include "compat.h"
 
-#include <smb2.h>
-#include <libsmb2.h>
-#include "libsmb2-dcerpc.h"
-#include "libsmb2-dcerpc-lsa.h"
-#include <libsmb2-raw.h>
+#include <smb2/smb2.h>
+#include <smb2/libsmb2.h>
+#include <smb2/libsmb2-dcerpc.h>
+#include <smb2/libsmb2-dcerpc-lsa.h>
+#include <smb2/libsmb2-raw.h>
 #include "libsmb2-private.h"
 
 #define LSA_UUID    0x12345778, 0x1234, 0xabcd, 0xef000123456789ab

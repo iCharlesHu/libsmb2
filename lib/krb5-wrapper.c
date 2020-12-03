@@ -59,9 +59,9 @@
 #include <stdio.h>
 
 #include "slist.h"
-#include <smb2.h>
-#include <libsmb2.h>
-#include <libsmb2-raw.h>
+#include <smb2/smb2.h>
+#include <smb2/libsmb2.h>
+#include <smb2/libsmb2-raw.h>
 #include "libsmb2-private.h"
 
 #include "krb5-wrapper.h"

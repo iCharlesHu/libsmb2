@@ -32,7 +32,7 @@
 
 #include "compat.h"
 
-#include "portable-endian.h"
+#include <portable-endian.h>
 #include "aes.h"
 
 static void aes_ccm_generate_b0(unsigned char *nonce, int nlen,

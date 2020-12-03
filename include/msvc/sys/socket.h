@@ -14,7 +14,7 @@ extern "C" {
 #include <winsock2.h>
 #include <ws2tcpip.h>
 
-#include <libsmb2.h>
+#include <smb2/libsmb2.h>
 
 #define EBADF WSAENOTSOCK
 

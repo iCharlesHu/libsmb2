@@ -71,7 +71,7 @@
 #include <stdint.h>
 #endif
 
-#include "portable-endian.h"
+#include <portable-endian.h>
 #include <errno.h>
 #include <fcntl.h>
 
@@ -82,8 +82,8 @@
 #include "compat.h"
 
 #include "slist.h"
-#include <smb2.h>
-#include <libsmb2.h>
+#include <smb2/smb2.h>
+#include <smb2/libsmb2.h>
 #include "smb3-seal.h"
 #include "libsmb2-private.h"
 

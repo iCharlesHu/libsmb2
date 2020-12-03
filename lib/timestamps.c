@@ -43,8 +43,8 @@
 
 #include "portable-endian.h"
 
-#include <smb2.h>
-#include <libsmb2.h>
+#include <smb2/smb2.h>
+#include <smb2/libsmb2.h>
 #include "libsmb2-private.h"
 
 uint64_t
